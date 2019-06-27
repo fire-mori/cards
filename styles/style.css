@@ -1,0 +1,200 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color:  #F7F7F7;
+  width: 100%;
+}
+
+.item-title {
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#deals {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 12px;
+}
+
+.sale-item {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  width: 356px;
+  height: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  margin: 12px;
+  min-width: 270px;
+}
+
+.sale-item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.sale-item-content {
+  padding: 24px;
+}
+
+.sale-item-footer {
+  padding: 0 24px 24px 24px;
+}
+
+.img {
+  align-self: center;
+  width: 100%;
+  border-radius: inherit;
+  transition: all ease-in-out .4s;
+  display: block;
+}
+
+.sale-item:hover .img {
+  opacity: 0.5;
+}
+
+.sale-item:hover .item-title {
+  color: #5640E1;
+}
+
+.button {
+  width: 100%;
+  border: 1px solid #5640E1;
+  background-color: #FFFFFF;
+  -moz-appearance: none !important;
+  box-sizing: border-box;
+  border-radius: 100px;
+  height: 52px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Roboto;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #5640E1;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: linear-gradient(199.06deg, #7B0B68 15.37%, #31048B 83.24%);
+  color: white;
+}
+
+.sale-item-header {
+  width: 100%;
+  background-color: black;
+  border-radius: 5px 5px 0px 0px;
+  position: relative;
+}
+
+.img-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  opacity: 0;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  width: 100%;
+  height: 100%;
+}
+
+.sale-item:hover .img-description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.label {
+  position: absolute;
+  top: 20px;
+  left: -12px;
+  width: 90px;
+  height: 36px;
+  background: #F33A3A;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: white;
+  line-height: 36px;
+}
+
+.label-hot {
+  background: #FFB800;
+}
+
+.label-new {
+  background: #50BF5A;
+}
+
+.category {
+  margin-block-end: 0px;
+  margin-block-start: 17px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.price {
+  display: inline-block;
+  margin-block-end: 0px;
+  margin-block-start: 17px;
+  margin-inline-end: 7px;
+  font-size: 18px;
+  color: #F33A3A;
+  font-weight: 700;
+}
+
+.old-price {
+  display: inline-block;
+  position: relative;
+  bottom: 4px;
+  margin-block-end: 0px;
+  margin-block-start: 17px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);;
+  font-weight: 700;
+  text-decoration-line: line-through;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 32px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  padding: 10px;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
